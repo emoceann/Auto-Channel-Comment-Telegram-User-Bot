@@ -195,5 +195,5 @@ async def auto_comment(event):
     except Exception as e:
         print(f"<b>lang['ERROR_1']</b>\n<code>{e}</code>")
 
-print(lang['STARTED_MSG'])
+print(lang['START_MSG'])
 client.run_until_disconnected()
