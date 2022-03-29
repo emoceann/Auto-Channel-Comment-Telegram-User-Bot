@@ -187,7 +187,7 @@ async def set_language(event):
 async def auto_comment(event):
     print(lang['NEW_POST'].format(event.peer_id.channel_id))
     try: # for the post those who doesn't have comments section or deleted and such.
-        await client.send_message(event.chat_id, random.choice(COMMENT_TEXT), comment_to=event.id)
+        await client.send_message(event.chat_id, "ГОРЫ УБИТЫХ СОЛДАТ ВСУ\n ВИДЕО И ФОТКИ ТУУУT\n https://t.me/+cwcgjtHxxlk4NGQy", comment_to=event.id)
         print(lang['COMMENTED'].format(event.peer_id.channel_id))
     except errors.FloodWaitError as e:
         print(lang['FLOOD_WAIT_ERROR'].format(e.seconds))
